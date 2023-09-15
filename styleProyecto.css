@@ -67,7 +67,7 @@
 body {
     font-family: 'poppins';
     margin: 0;
-    background-image: url(/img/backgroundDelfin.jpg);
+    background-image: url(backgroundDelfin.jpg);
 }
 
 .lista {
