@@ -237,6 +237,7 @@ ul li a {
         align-items: center;
         text-align: center;
         padding: 10px 0;
+        position: absolute;
     }
 
 }
