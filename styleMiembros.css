@@ -21,20 +21,25 @@
 
 .contenedorParticipantes{
     display: flex;
-    justify-content: center;
-    margin-top: 60px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-.participante{
-    float: left;
-  width: calc(30% - 20px);
-  height: 150px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  color: rgb(0, 0, 0);
+.participantes{
+    width: calc(33.33% - 100px);
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: space-around;
+    display: flex;
+    position: relative;
 }
 
+
+.textoImagen{
+    margin-top: 10px;
+}
 .titulo {
     text-align: center;
     width: 100%;
@@ -58,6 +63,7 @@ img {
     box-shadow: 10px 10px 10px rgb(33, 1, 177);
 }
 
+
 body {
     font-family: 'poppins';
     margin: 0;
@@ -65,7 +71,9 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
+
 
 .lista {
     display: flex;
@@ -122,21 +130,25 @@ div {
     margin-right: 30px;
 }
 
+
 div ul {
     padding-left: 20px;
 }
 
 footer {
     background-color: black;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
 }
+
 
 input {
     display: none;
@@ -145,6 +157,9 @@ input {
 label {
     display: none;
 }
+
+
+
 
 @media all and (max-width: 710px) {
 
@@ -220,4 +235,32 @@ label {
 ul li a {
     text-decoration: none;
     color: rgb(2, 138, 230);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .contenedorParticipantes {
+        flex-direction: column;
+    }
+    .participantes {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+        flex-direction: column;
+    }
+    footer{
+        background-color: black;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+    }
+
 }
