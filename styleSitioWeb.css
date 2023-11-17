@@ -107,6 +107,7 @@ div ul {
 
 
 footer {
+        position: absolute;
         background-color: black;
         bottom: 0;
         width: 100%;
@@ -117,7 +118,7 @@ footer {
         align-items: center;
         text-align: center;
         padding: 10px 0;
-        position: absolute;
+
 }
 
 
