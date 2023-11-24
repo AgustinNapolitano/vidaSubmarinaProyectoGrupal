@@ -106,6 +106,26 @@ div ul {
 }
 
 
+
+.contenedor {
+    text-align: center;
+}
+
+.boton {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white; 
+}
+
+.boton:hover {
+    background-color: #45a049;
+}
+
 footer {
         position: absolute;
         background-color: black;
